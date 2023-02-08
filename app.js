@@ -9,8 +9,10 @@ var app = express();
 app.use(cors());
 
 var testAPIRouter = require("./routes/testAPI");
+var weatherAPIRouter = require("./routes/weather-routes");
 
 app.use("/", testAPIRouter);
+app.use("/weatherapi/", weatherAPIRouter);
 
 app.listen(PORT, HOST, () => {
   console.log(`Starting server at ${HOST}:${PORT}`);
