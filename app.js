@@ -15,5 +15,5 @@ app.use("/", testAPIRouter);
 app.use("/weatherapi/", weatherAPIRouter);
 
 app.listen(PORT, HOST, () => {
-  console.log(`Starting server at ${HOST}:${PORT}`);
+  console.log(`Server started at ${HOST}:${PORT}`);
 });
